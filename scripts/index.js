@@ -4,3 +4,4 @@ vaoBtn.addEventListener("click", () => {
 });
 
 //also add link to category bar
+

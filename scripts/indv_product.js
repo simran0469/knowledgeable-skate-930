@@ -7,12 +7,14 @@ let temp = {
     "price": 600,
     "bought": 11102
   }
+  const URL = "https://good-rose-bass-ring.cyclic.app/data";
 
+//   Changing Title bar name 
   let titleEl = document.querySelector("title");
   titleEl.textContent = temp.name;
 
   let detailsEl = document.getElementById("data");
-
+  
   detailsEl.innerHTML = `
     <div>
         <div>
