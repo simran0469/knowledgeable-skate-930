@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#mainsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #DCDCDC;
+}
+#data-list{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 10px;
+overflow: hidden;
+
+padding:60px;
+
+}
+#btn{
+    background-color: #FF6347;
+    padding:3px 5px 2px 5px;
+}
+#filter{
+    background-color: white;
+   
+    
+}
+.pagination-button{
+    font-size: 15px;
+    padding: 5px 40px 5px 40px;
+    background-color: white;
+}
+#pagination{
+    
+    text-align: center;
+    
+   
+}
+.card_img>img{
+
+min-width: 300px;
+max-width: 350px;
+
+
+}
+
