@@ -209,7 +209,7 @@
 </body>
 <script >
     let navBar = document.getElementById("navbar");
-const url = "https://639b3492d5141501974eaf28.mockapi.io/nykaa";
+const url = "https://good-rose-bass-ring.cyclic.app/data";
 let mainSection = document.getElementById("main");
 
 //--------------------------------------------//
@@ -277,14 +277,15 @@ function renderList(data) {
     ${data
       .map((ele) =>
         card(
-          ele.category,
-          ele.details,
+         
+          ele.deal,
           ele.id,
           ele.image,
           ele.name,
           ele.price,
-          ele.quantity,
-          ele.ratings
+          ele.bought,
+          ele.address
+         
         )
       )
       .join("")}    
@@ -321,18 +322,18 @@ function renderList(data) {
   }
 }
 
-function card(cat, details, id, image, name, price, quantity, ratings) {
+function card( deal, id, image, name, price, bought, address) {
   let card = `
         <div class="card" data-id=${id}>
             <div class="card-img">
                 <img src=${image} alt='image'>
             </div>
             <div class="card-body">
-                <h3 class="name">${name.substring(0, 24)}</h3>
-                <div class="description">${details.substring(0, 30)}</div>
-                <h3 class="rating">Rating: ${ratings}</h3>
+                <h3 class="name">${name}</h3>
+                <div class="description">${deal}</div>
+                <h3 class="rating">Bought: ${bought}</h3>
                 <h3 class='price'>Price: ${price}</h3>
-                <h3 class="quantity">Quantity: ${quantity}</h3>
+                <h3 class="quantity">Address: ${address}</h3>
                 <button id="removeButton">Remove</button>
               </div>
         </div>        
@@ -351,26 +352,44 @@ function addProductForm() {
     <form id="addForm" >
     <label for="name" >Product Name : </label><br>
     <input type="text" id="name" required><br>
-    <label for="category">Product Category : </label><br>
-    <input type="text" id="category" required><br>
+   
     <label for="price">Product Price : </label><br>
     <input type="number" id="price" required><br>
-    <label for="details">Product Details : </label><br>
+
+    <label for="deal">Product Details : </label><br>
     <input type="text" id="details" required><br>
-    <label for="ratings">Product Ratings: </label><br>
-    <input type="number" id="ratings" min="1" max="5" required><br>
-    <label for="quantity">Product Quantity : </label><br>
-    <input type="number" id="quantity" min="1" required><br>
+ 
+
+    <label for="bought">Product Bought: </label><br>
+    <input type="number" id="ratings" min="1"  required><br>
+
+    <label for="address">Address : </label><br>
+    <input type="text" id="quantity"  required><br>
+
+
     <label for="image">Product Image : </label><br>
     <input type="text" id="image" required><br>
+
     <hr>
     <input type="submit" value="Submit">
     </form>    
     `;
+      /*
+  description===deal
+  rating = bought
+  quantity= address
+  */
+/*
+ 
+   <label for="category">Product Bought : </label><br>
+    <input type="text" id="category" required><br>
+      
 
+    
+*/
   const myform = document.getElementById("addForm");
   const addName = document.getElementById("name");
-  const addCategory = document.getElementById("category");
+  // const addCategory = document.getElementById("category");
   const addPrice = document.getElementById("price");
   const addDetails = document.getElementById("details");
   const addRatings = document.getElementById("ratings");
@@ -381,17 +400,17 @@ function addProductForm() {
     e.preventDefault();
     var productObject = {
       name: addName.value,
-      category: addCategory.value,
+     
       price: addPrice.value,
-      details: addDetails.value,
-      ratings: addRatings.value,
-      quantity: addQuantity.value,
+      deal: addDetails.value,
+      bought: addRatings.value,
+      address: addQuantity.value,
       image: addImage.value,
     };
     addProductToAPI(productObject);
   });
 }
-
+//  category: addCategory.value,
 function addProductToAPI(obj) {
   fetch(url, {
     method: "POST",
@@ -414,26 +433,33 @@ let editProducts=document.getElementById('editProducts');
 editProducts.addEventListener("click", () => {
   editProduct();
 });
-
+//type="number"
 function editProduct() {
   mainSection.innerHTML = `
     <form id="addForm" >
     <label for="id" >Please Enter Id : </label><br>
-    <input type="number" id="id" required><br>
+    <input  id="id" required><br>
+
     <label for="name" >Product Name : </label><br>
     <input type="text" id="name" required><br>
-    <label for="category">Product Category : </label><br>
-    <input type="text" id="category" required><br>
+   
     <label for="price">Product Price : </label><br>
     <input type="number" id="price" required><br>
-    <label for="details">Product Details : </label><br>
+
+    <label for="deal">Product Details : </label><br>
     <input type="text" id="details" required><br>
-    <label for="ratings">Product Ratings: </label><br>
-    <input type="number" id="ratings" min="1" max="5" required><br>
-    <label for="quantity">Product Quantity : </label><br>
-    <input type="number" id="quantity" min="1" required><br>
+ 
+
+    <label for="bought">Product Bought: </label><br>
+    <input type="number" id="ratings" min="1"  required><br>
+
+    <label for="address">Address : </label><br>
+    <input type="text" id="quantity"  required><br>
+
+
     <label for="image">Product Image : </label><br>
     <input type="text" id="image" required><br>
+
     <hr>
     <input type="submit" value="Submit">
     </form>  
@@ -442,7 +468,7 @@ function editProduct() {
   const myform = document.getElementById("addForm");
   const id = document.getElementById("id");
   const addName = document.getElementById("name");
-  const addCategory = document.getElementById("category");
+  // const addCategory = document.getElementById("category");
   const addPrice = document.getElementById("price");
   const addDetails = document.getElementById("details");
   const addRatings = document.getElementById("ratings");
@@ -453,12 +479,12 @@ function editProduct() {
     e.preventDefault();
     var productObject = {
       name: addName.value,
-      category: addCategory.value,
-      price: addPrice.value,
-      details: addDetails.value,
-      ratings: addRatings.value,
-      quantity: addQuantity.value,
-      image: addImage.value,
+     
+     price: addPrice.value,
+     deal: addDetails.value,
+     bought: addRatings.value,
+     address: addQuantity.value,
+     image: addImage.value,
     };
     editProductFromAPI(productObject, id.value);
   });
