@@ -34,8 +34,8 @@ The NextDoorBy Clone is designed to be fully responsive. The user interface and 
   
 ## Features Not Implemented  
 The following features have not been implemented in this version of the NextDoorBy Clone:  
--Orders History: The ability for users to view their order history.  
--Account Dashboard: A user dashboard providing additional account-related features.  
+- Orders History: The ability for users to view their order history.  
+- Account Dashboard: A user dashboard providing additional account-related features.  
 Please note that this project is purely for educational purposes and is not intended for commercial use or distribution.  
   
 Feel free to reach out to any of the contributors mentioned above for any questions or feedback on this project. Happy exploring!  
