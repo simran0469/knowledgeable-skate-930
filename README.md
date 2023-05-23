@@ -10,16 +10,16 @@ The objective of this project is to gain practical experience in building a full
 You can access the live version of the NextDoorBy Clone at the following link: https://nextdoorby.netlify.app/  
   
 ##Contributors  
-Simran Kaur (@simran0469) - Responsible for the product page and API data.
-Anshuman Patel (@patel-anshuman) - Responsible for the landing page and individual product page and cart cum payment page.
+Simran Kaur (@simran0469) - Responsible for the product page and API data.  
+Anshuman Patel (@patel-anshuman) - Responsible for the landing page and individual product page and cart cum payment page.  
 Sohel Rana Halder (@sohelhld) - Responsible for the login and admin side (product management).  
   
 ##Flow of Website  
--Landing page: Displays featured products and promotional offers.
--Login page: Allows users to authenticate and access their accounts.
--Product page: Lists available products with details and Add to Cart functionality.
--Individual product page: Shows specific product information and allows users to add it to their cart.
--Cart cum payment page: Enables users to review their selected products, apply discounts, and make payments.
+-Landing page: Displays featured products and promotional offers.  
+-Login page: Allows users to authenticate and access their accounts.  
+-Product page: Lists available products with details and Add to Cart functionality.  
+-Individual product page: Shows specific product information and allows users to add it to their cart.  
+-Cart cum payment page: Enables users to review their selected products, apply discounts, and make payments.  
 -Admin side (product management): Allows administrators to add, edit, and delete products from the database.  
   
 ##Tech Stack Used  
@@ -43,4 +43,4 @@ The following features have not been implemented in this version of the NextDoor
 -Account Dashboard: A user dashboard providing additional account-related features.  
 Please note that this project is purely for educational purposes and is not intended for commercial use or distribution.  
   
-Feel free to reach out to any of the contributors mentioned above for any questions or feedback on this project. Happy exploring!
+Feel free to reach out to any of the contributors mentioned above for any questions or feedback on this project. Happy exploring!  
