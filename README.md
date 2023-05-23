@@ -10,10 +10,10 @@ The objective of this project is to gain practical experience in building a full
 You can access the live version of the NextDoorBy Clone at the following link: https://nextdoorby.netlify.app/  
   
 ## Contributors  
-- Simran Kaur (@simran0469) - Responsible for the product page and API data.  
-- Anshuman Patel (@patel-anshuman) - Responsible for the landing page and individual product page and cart cum payment page.  
-- Sohel Rana Halder (@sohelhld) - Responsible for the login and admin side (product management).  
-  
+- Simran Kaur ([@simran0469](https://github.com/simran0469)) - Responsible for the product page and API data.  
+- Anshuman Patel ([@patel-anshuman](https://github.com/patel-anshuman)) - Responsible for the landing page and individual product page and cart cum payment page.  
+- Sohel Rana Halder ([@sohelhld](https://github.com/sohelhld)) - Responsible for the login and admin side (product management).  
+    
 ## Flow of Website  
 - Landing page: Displays featured products and promotional offers.  
 - Login page: Allows users to authenticate and access their accounts.  
