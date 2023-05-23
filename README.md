@@ -1,32 +1,43 @@
-# NextDoorBy - Clone of Nearbuy.com
+#NextDoorBy - Clone of Nearbuy.com
 
-NextDoorBy is a clone of Nearbuy.com, an e-commerce platform offering exclusive deals and discounts on food & beverage, beauty & wellness, entertainment, and retail. This project was developed as a collaborative effort by 3 members, and is built using HTML5, CSS3, and Vanilla JavaScript.
+##Description
+NextDoorBy Clone is an educational project aimed at replicating the functionality and user experience of the popular e-commerce platform, Nearbuy.com. It provides a simplified version of the original platform's features, allowing users to browse and purchase products, while also enabling administrators to manage products on the backend.
 
-## Deployed Link
+##Objective
+The objective of this project is to gain practical experience in building a full-stack web application, learn various technologies and frameworks involved in web development, and understand the core concepts of e-commerce platforms. By cloning NextDoorBy, we aim to showcase our skills in frontend and backend development, database management, and responsive web design.
 
-You can access the deployed website at https://cheery-youtiao-bf895c.netlify.app/.
+##Live/Deployed Website
+You can access the live version of the NextDoorBy Clone at the following link: https://nextdoorby.netlify.app/
 
-## Description
+##Contributors
+Simran Kaur (@simran0469) - Responsible for the product page and API data.
+Anshuman Patel (@patel-anshuman) - Responsible for the landing page and individual product page and cart cum payment page.
+Sohel Rana Halder (@sohelhld) - Responsible for the login and admin side (product management).
 
-NextDoorBy offers a responsive and pixel-perfect layout, and provides the following features:
+##Flow of Website
+-Landing page: Displays featured products and promotional offers.
+-Login page: Allows users to authenticate and access their accounts.
+-Product page: Lists available products with details and Add to Cart functionality.
+-Individual product page: Shows specific product information and allows users to add it to their cart.
+-Cart cum payment page: Enables users to review their selected products, apply discounts, and make payments.
+-Admin side (product management): Allows administrators to add, edit, and delete products from the database.
 
-- Landing page
-- Login & Signup page
-- Product page
-- Individual product page
-- Cart cum payment page
-- Add/Update/Delete products by admin
+##Tech Stack Used
 
-## Tech Stack
+The NextDoorBy Clone project has been developed using the following technologies:
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+HTML
+CSS
+Vanilla JavaScript
+REST API
+Responsiveness
+The NextDoorBy Clone is designed to be fully responsive. The user interface and layout adjust seamlessly across different devices and screen sizes, ensuring optimal user experience on desktops, tablets, and mobile devices.
 
-## Collaborators and Areas of Responsibility
+##Features Not Implemented
+The following features have not been implemented in this version of the NextDoorBy Clone:
 
-The NextDoorBy project was a collaborative effort by the following members:
+-Orders History: The ability for users to view their order history.
+-Account Dashboard: A user dashboard providing additional account-related features.
+Please note that this project is purely for educational purposes and is not intended for commercial use or distribution.
 
-- Simran Kaur (Product page, API)
-- Anshuman Patel (Landing page, Individual product page, Cart cum Payment page)
-- Sohel Rana Halder (Signup & Login functionality, CRUD operations on products in admin side)
+Feel free to reach out to any of the contributors mentioned above for any questions or feedback on this project. Happy exploring!
