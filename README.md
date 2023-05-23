@@ -14,7 +14,7 @@ You can access the live version of the NextDoorBy Clone at the following link: h
 - Anshuman Patel (@patel-anshuman) - Responsible for the landing page and individual product page and cart cum payment page.  
 - Sohel Rana Halder (@sohelhld) - Responsible for the login and admin side (product management).  
   
-##Flow of Website  
+## Flow of Website  
 - Landing page: Displays featured products and promotional offers.  
 - Login page: Allows users to authenticate and access their accounts.  
 - Product page: Lists available products with details and Add to Cart functionality.  
