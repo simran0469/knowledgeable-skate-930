@@ -1,6 +1,9 @@
-*{
+body{
     padding: 0;
     margin: 0;
+    background-color: #e1e9ec;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 nav {
     /* position: fixed; */
@@ -67,9 +70,33 @@ padding:60px;
 }
 #filter{
     background-color: white;
-   
-    
+    width: 20%;
+    margin-inline: auto;
+    padding-inline: 10px;
 }
+#sort-low-to-high, #sort-high-to-low {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: #ef534e;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+#sort-button {
+    display: flex;
+    justify-content: end;
+}
+
+#card {
+    background-color: white;
+    padding: 15px;
+}
+.card_bought {
+    background-color: #f6f6f6;
+    color: #555;
+}
+
 .pagination-button{
     font-size: 15px;
     padding: 5px 40px 5px 40px;
@@ -201,5 +228,43 @@ max-width: 350px;
 #app-links a {
     text-decoration: none;
     color: white; 
+}
+
+@media (max-width: 900px) {
+    #data-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #app-links {
+        flex-direction: column;
+        
+    }
+    #app-links a {
+        width: 100%;
+    }
+    #app-links p {
+        width: 100%;
+        text-align: center;
+    }
+    .top > div {
+        flex-direction: column;
+    }
+    .bottom > div {
+        flex-direction: column;
+    }
+    .bottom .left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #mainsection {
+        flex-direction: column;
+    }
+    #data-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #filter {
+        display: flex;
+    }
 }
 

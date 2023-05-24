@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
     <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="./images/logo_short_letter.png" type="image/icon type">
+    <title>Products</title>
 </head>
 
 <body>
-    <h2>NEARBUY DEALS IN NEW DELHI</h2>
+    <h4 style="margin: 5px 80px;">NEARBUY DEALS IN NEW DELHI</h4>
     <!-- Navigation Bar  -->
     <nav>
         <div id="logo">
@@ -27,7 +32,7 @@
     <main id="mainsection">
         <div id="filter">
             <div id="location filter">
-                <h2>location</h2>
+                <h2>Location</h2>
                 <div>
                     <input type="checkbox" id="Connaught Place" /> Connaught Place
                 </div>
@@ -54,9 +59,19 @@
                     <input type="checkbox" id="Buffet Offers" />Buffet Offers 
                  </div>
             </div>
+            <hr/>
+            
+            
+            
         </div>
 
+        
+
         <div id="product-container">
+            <div id="sort-button">
+                <button id="sort-low-to-high"> Sort Low To High</button>
+                <button id="sort-high-to-low">Sort High To Low </button>
+            </div>
             <div class="data-list" id="data-list">
                 
                 <!-- append data -->
