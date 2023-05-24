@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product page</title>
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="/styles/indv_product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href="./images/logo_short_letter.png" type="image/icon type">
-    <title>Products</title>
+    <title>NextDoorby</title>
 </head>
-
 <body>
-    <h4 style="margin: 5px 80px;">NEARBUY DEALS IN NEW DELHI</h4>
     <!-- Navigation Bar  -->
     <nav>
         <div id="logo">
@@ -29,59 +25,68 @@
         </div>
     </nav>
 
-    <main id="mainsection">
-        <div id="filter">
-            <div id="location filter">
-                <h2>Location</h2>
-                <div>
-                    <input type="checkbox" id="Connaught Place" /> Connaught Place
-                </div>
-                <div>
-                    <input type="checkbox" id="Rajouri Garden" /> Rajouri Garden
-                </div>
-                <div>
-                    <input type="checkbox" id="Aerocity" /> Aerocity
-                </div>
-                <div>
-                    <input type="checkbox" id="Punjabi Bagh West" />Punjabi Bagh West 
-                </div>
-
+    <!-- Page specific HTML below  -->
+    <div id="data">
+    <!--<div>
+            <div>
+                <p id="deal">${temp.deal}</p>
+                <p id="bought">Based on <span>${temp.bought}</span> ratings</p>
             </div>
-            <div id="Categories filter">
-                <h2>Categories</h2>
-                <div>
-                    <input type="checkbox" id="Salon Services" />Salon Services
-                </div>
-                <div>
-                    <input type="checkbox" id="Drinks with Starters" /> Drinks with Starters 
-                </div>
-                <div>
-                    <input type="checkbox" id="Buffet Offers" />Buffet Offers 
-                 </div>
+            <div>
+                <h2 id="name">${temp.name}</h2>
             </div>
-            <hr/>
-            
-            
-            
+            <p id="address">${temp.address}</p>
         </div>
+        <div>
+            <img src=${temp.image} alt="" id="image">
+        </div> -->
+    </div>
 
-        
-
-        <div id="product-container">
-            <div id="sort-button">
-                <button id="sort-low-to-high"> Sort Low To High</button>
-                <button id="sort-high-to-low">Sort High To Low </button>
-            </div>
-            <div class="data-list" id="data-list">
-                
-                <!-- append data -->
-              </div>
-              <div class="pagination" id="pagination">
-                <!-- append button -->
-              </div>
-           
+    <div class="extra-section">
+        <div class="fl extra">
+            <button>Deals</button>
+            <button>About</button>
+            <button>Photos</button>
         </div>
-    </main>
+        <div class="extra-body">
+            <div class="deals fl">
+                <div>
+                    <p>102 Bought</p>
+                    <h3 id="head">Breakfast Buffet (Veg/Non-Veg)</h3>
+                    <p style="color: green">Free Cancellation</p>
+                    <p>Valid for : 1 Person Valid on : All Days Timings : 7:30 AM - 10:30 AM</p>
+                    <button class="bb">Menu</button>
+                    <button class="bb">Details</button>
+                </div>
+                <div>
+                    <p>5% OFF</p>
+                    <p>₹ <span id="price"></span></p>
+                    <p>Inc. of all taxes</p>
+                    <div id="add">
+                        <button id="addBtn1">Add +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="atc">
+                    <h3>Your Order</h3>
+                </div>
+                <div class="atc" id="ind-cart">
+                    <h3>Please add an option</h3>
+                    <p>Your order is empty</p>
+                </div>
+                <div id="total">
+                    <h3>Total</h3>
+                    <button>BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Page specific HTML above  -->
 
     <!-- Footer Section  -->
     <div class="top">
@@ -157,6 +162,6 @@
         </div>
     </div>
 </body>
-<script src="/product.js"></script>
-
+<script src="./scripts/indv_product.js"></script>
 </html>
+

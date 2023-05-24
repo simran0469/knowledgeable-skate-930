@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product page</title>
-    <link rel="stylesheet" href="product.css">
+    
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href="./images/logo_short_letter.png" type="image/icon type">
-    <title>Products</title>
+    <title>NextDoorby</title>
 </head>
-
 <body>
-    <h4 style="margin: 5px 80px;">NEARBUY DEALS IN NEW DELHI</h4>
     <!-- Navigation Bar  -->
     <nav>
         <div id="logo">
@@ -23,65 +20,79 @@
                 <img src="./images/logo.png" alt="Logo">
             </a>
         </div>
-        <div id="search">
-            <input type="text" name="" id="search-box" placeholder="Search restaurants, spa, events">
-            <button id="search-btn">SEARCH</button>
-        </div>
     </nav>
+    
 
-    <main id="mainsection">
-        <div id="filter">
-            <div id="location filter">
-                <h2>Location</h2>
-                <div>
-                    <input type="checkbox" id="Connaught Place" /> Connaught Place
-                </div>
-                <div>
-                    <input type="checkbox" id="Rajouri Garden" /> Rajouri Garden
-                </div>
-                <div>
-                    <input type="checkbox" id="Aerocity" /> Aerocity
-                </div>
-                <div>
-                    <input type="checkbox" id="Punjabi Bagh West" />Punjabi Bagh West 
-                </div>
+    <!-- Page specific HTML below  -->
 
-            </div>
-            <div id="Categories filter">
-                <h2>Categories</h2>
-                <div>
-                    <input type="checkbox" id="Salon Services" />Salon Services
+    <div class="fl" id="cart">
+        <div id="price">
+            <div id="order">
+                <p class="head">Order summary</p>
+                <div class="fl">
+                    <div>
+                        <img src="" alt="" id="image">
+                    </div>
+                    <div>
+                        <p id="name"></p>
+                        <p id="address"></p>
+                    </div>
                 </div>
                 <div>
-                    <input type="checkbox" id="Drinks with Starters" /> Drinks with Starters 
+                    <p id="item-name"></p>
+                    <div class="fl">
+                        <p>Qty: <span id="qty"></span></p>
+                        <p id="mrp"><span id="ind-price"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <div>
+                    <p>Subtotal <b><span id="total-qty"></span></b></p>
+                    <p>₹ <span id="sub-total"></span></p>
                 </div>
                 <div>
-                    <input type="checkbox" id="Buffet Offers" />Buffet Offers 
-                 </div>
+                    <p>Convinience Fees</p>
+                    <p>₹ <span id="convi"></span></p>
+                </div>
+                <div>
+                    <a href="">View & Apply promo code</a>
+                </div>
+                <div class="fl">
+                    <div>
+                        <h3>Total</h3>
+                    </div>
+                    <div>
+                        <p>₹ <span id="total-price">2195</span></p>
+                    </div>
+                </div>
             </div>
-            <hr/>
-            
-            
-            
         </div>
-
-        
-
-        <div id="product-container">
-            <div id="sort-button">
-                <button id="sort-low-to-high"> Sort Low To High</button>
-                <button id="sort-high-to-low">Sort High To Low </button>
+        <div class="payment">
+            <p class="head">Payment options</p>
+            <div class="fl">
+                <div class="pay-modes">
+                    <button>Pay at Check-in</button>
+                    <button>Paytm</button>
+                    <button>Credit Cards</button>
+                    <button>Debit Cards</button>
+                    <button>Net Banking</button>
+                </div>
+                <div id="pay1">
+                    <p>Book Order</p>
+                    <button>BOOK</button>
+                </div>
             </div>
-            <div class="data-list" id="data-list">
-                
-                <!-- append data -->
-              </div>
-              <div class="pagination" id="pagination">
-                <!-- append button -->
-              </div>
-           
         </div>
-    </main>
+    </div>
+
+
+
+
+
+
+    
+    <!-- Page specific HTML above  -->
 
     <!-- Footer Section  -->
     <div class="top">
@@ -141,22 +152,23 @@
             <div class="right">
                 <div>
                     <h3>Download App</h3>
-                    <div id="app-links">
-                        <a href="">
-                            <img src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
-                            <p>Google Play</p>
-                        </a>
-                        <a href="">
-                            <img src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
-                            <p>App Store</p>
-                        </a>
-                    </div>
-                    <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+                <div id="app-links">
+                    <a href="">
+                        <img src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                        <p>Google Play</p>
+                    </a>
+                    <a href="">
+                        <img src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
+                        <p>App Store</p>
+                    </a>
+                </div>
+                <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
-<script src="/product.js"></script>
 
+</body>
+<script src="./scripts/index.js"></script>
 </html>
+
